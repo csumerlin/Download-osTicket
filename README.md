@@ -22,15 +22,17 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 <h2>Ticket Lifecycle Stages</h2>
 
+flowchart LR
     A[User submits ticket] --> B[New]
     B -->|Auto-routing / Filters| C[Open]
-    C -->|Assigned to Agent/Team| D[Assigned]
+    C -->|Assign to Agent/Team| D[Assigned]
     D --> E[In Progress]
     E -->|Awaiting Customer| F[Pending]
     F -->|Customer replies| E
     E --> G[Resolved]
     G -->|Auto-close after SLA window| H[Closed]
     G -->|Reopened by customer| E
+
 
 <h2>Lifecycle Stages</h2>
 
