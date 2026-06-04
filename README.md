@@ -20,24 +20,11 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 - Windows 10</b> (21H2)
 
-<h2>Ticket Lifecycle Stages</h2>
-
-flowchart LR
-    A[User submits ticket] --> B[New]
-    B -->|Auto-routing / Filters| C[Open]
-    C -->|Assign to Agent/Team| D[Assigned]
-    D --> E[In Progress]
-    E -->|Awaiting Customer| F[Pending]
-    F -->|Customer replies| E
-    E --> G[Resolved]
-    G -->|Auto-close after SLA window| H[Closed]
-    G -->|Reopened by customer| E
-
-
 <h2>Lifecycle Stages</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="<img width="1500" height="135" alt="diagram" src="https://github.com/user-attachments/assets/ce8f1e46-bdaa-4e35-9571-c0b14b7a7277" />
+"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
