@@ -22,8 +22,6 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 <h2>Ticket Lifecycle Stages</h2>
 
-## Quick diagram
-```mermaid
 flowchart LR
     A[User submits ticket] --> B[New]
     B -->|Auto-routing / Filters| C[Open]
