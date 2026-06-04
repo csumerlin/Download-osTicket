@@ -22,6 +22,9 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 <h2>Lifecycle Stages</h2>
 
+<img width="1419" height="268" alt="image" src="https://github.com/user-attachments/assets/d5e72026-e885-49ec-b3b5-31ae7d53cabc" />
+
+
 <p>
 <img src="<img width="1500" height="135" alt="diagram" src="https://github.com/user-attachments/assets/ce8f1e46-bdaa-4e35-9571-c0b14b7a7277" />
 "/>
