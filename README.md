@@ -8,7 +8,7 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com/watch?v=CRl6ZXkAynU) by ServerFix I Lab. This video helped me understand OsTicket outside of the CourseCareers teaching.
+- ### [OS Ticketing tool on Windows Server 2025 | Step-by-Step Guide](https://www.youtube.com/watch?v=CRl6ZXkAynU) by ServerFix I Lab. This video helped me understand OsTicket outside of the CourseCareers teaching.
 
 <h2>Environments and Technologies Used</h2>
 
