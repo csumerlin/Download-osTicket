@@ -12,13 +12,14 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
 - Internet Information Services (IIS)
+- PHP 8+
+- MariaDB/MySQL Database
+- osTicket
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 11</b> (21H2)
 
 <h2>Lifecycle Stages</h2>
 
