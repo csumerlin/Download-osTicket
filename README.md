@@ -19,7 +19,7 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 <h2>Operating Systems Used </h2>
 
-- Windows 11</b> (21H2)
+- Windows Server 2025</b> (21H2)
 
 <h2>Lifecycle Stages</h2>
 
