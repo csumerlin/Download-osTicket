@@ -21,11 +21,11 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 - Windows Server 2025</b> (21H2)
 
-<h2>Downloads</h2>
-
-System Requirements
+<h2>System Requirements</h2>
 
 <img width="865" height="512" alt="image" src="https://github.com/user-attachments/assets/eb195dad-e28d-448f-83fc-dcfbfe2e5a07" />
+
+<h2>Downloads</h2>
 
 PHP 8.2 
 
