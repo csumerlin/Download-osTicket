@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - How to install osTicket</h1>
-This tutorial outlines everything from setting up and configuring osTicket for your help desk.<br />
+This tutorial outlines the downloads necessaary for setting up and configuring osTicket for your help desk.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -44,4 +44,4 @@ osTicket Plugins
 
 <h2>Video Demonstration</h2>
 
-- ### [OS Ticketing tool on Windows Server 2025 | Step-by-Step Guide](https://www.youtube.com/watch?v=CRl6ZXkAynU) by ServerFix I Lab. This video helped me understand OsTicket outside of the CourseCareers teaching.
+- ### [OS Ticketing tool on Windows Server 2025 | Step-by-Step Guide](https://www.youtube.com/watch?v=CRl6ZXkAynU) by ServerFix I Lab. This video helped me understand OsTicket outside of the CourseCareers teaching. Follow the instructions in the video and you will have osTicket working in no time!
