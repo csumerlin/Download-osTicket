@@ -28,3 +28,6 @@ System Requirements
 
 PHP 8.2 
 <img width="382" height="156" alt="image" src="https://github.com/user-attachments/assets/37b7e5bc-af2d-469e-b654-c6f01375f86a" />
+
+MariaDB Server
+<img width="487" height="355" alt="image" src="https://github.com/user-attachments/assets/67d2e180-a9f7-4331-bb9e-31d3b040d770" />
