@@ -21,7 +21,7 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 - Windows Server 2025</b> (21H2)
 
-<h2>Lifecycle Stages</h2>
+<h2>Helpful Screenshots</h2>
 
 <img width="1419" height="268" alt="image" src="https://github.com/user-attachments/assets/d5e72026-e885-49ec-b3b5-31ae7d53cabc" />
 The above diagram shows the life of a ticket. It tracks a ticket from creation to ownership, active work, possible waiting, solution, and either confirmation/closure or a reopen if the user needs more help.
