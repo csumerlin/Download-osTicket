@@ -21,7 +21,7 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 - Windows Server 2025</b> (21H2)
 
-<h2>Helpful Screenshots</h2>
+<h2>Downloads</h2>
 
 System Requirements
 
