@@ -38,3 +38,11 @@ MariaDB Server
 PHP Manager for IIS
 
 <img width="824" height="405" alt="image" src="https://github.com/user-attachments/assets/e1c8b78a-25d2-469a-811c-efbe690d4a1a" />
+
+osTicket Core, v1.18.2
+
+<img width="839" height="198" alt="image" src="https://github.com/user-attachments/assets/9ed76889-b94f-4b57-8610-b8723436f675" />
+
+osTicket Plugins
+
+<img width="699" height="311" alt="image" src="https://github.com/user-attachments/assets/b9446d91-21ef-413d-ad84-1661b0fab190" />
