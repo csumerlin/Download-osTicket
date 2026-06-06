@@ -31,3 +31,6 @@ PHP 8.2
 
 MariaDB Server
 <img width="487" height="355" alt="image" src="https://github.com/user-attachments/assets/67d2e180-a9f7-4331-bb9e-31d3b040d770" />
+
+PHP Manager for IIS
+<img width="824" height="405" alt="image" src="https://github.com/user-attachments/assets/e1c8b78a-25d2-469a-811c-efbe690d4a1a" />
