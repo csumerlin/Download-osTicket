@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - How to install osTicket</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+This tutorial outlines everything from setting up and configuring osTicket for your help desk.<br />
 
 
 <h2>Video Demonstration</h2>
