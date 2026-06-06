@@ -23,6 +23,8 @@ This tutorial outlines everything from setting up and configuring osTicket for y
 
 <h2>Helpful Screenshots</h2>
 
+System Requirements
 <img width="865" height="512" alt="image" src="https://github.com/user-attachments/assets/eb195dad-e28d-448f-83fc-dcfbfe2e5a07" />
 
+PHP 8.2 
 <img width="382" height="156" alt="image" src="https://github.com/user-attachments/assets/37b7e5bc-af2d-469e-b654-c6f01375f86a" />
