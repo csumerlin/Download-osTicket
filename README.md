@@ -37,10 +37,17 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
 
 **Screenshots**:
 
-- ![Create Resource Group](screenshots/Create%20RG.png)
-- ![Create VM Basics](screenshots/Azure%20Portal%20-%20Create%20VM%20Basics%20tab.png)
-- ![Review + Create](screenshots/Review%20+%20Create%20summary.png)
-- ![Deployment Complete](screenshots/Deployment%20complete%20screen.png)
+**1. Creating the Resource Group**  
+![Create Resource Group](screenshots/Create%20RG.png)
+
+**2. Create VM Basics Tab**  
+![Create VM Basics](screenshots/Azure%20Portal%20-%20Create%20VM%20Basics%20tab.png)
+
+**3. Review + Create Summary**  
+![Review + Create](screenshots/Review%20+%20Create%20summary.png)
+
+**4. Deployment Complete**  
+![Deployment Complete](screenshots/Deployment%20complete%20screen.png)
 
 ### Connecting to the VM
 - Connected via Remote Desktop using the public IP address.
