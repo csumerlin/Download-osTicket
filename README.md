@@ -2,46 +2,15 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - How to install osTicket</h1>
-This tutorial outlines the downloads necessaary for setting up and configuring osTicket for your help desk.<br />
+<h1>osTicket Installation and Configuration on Windows Server 2025 (IIS)</h1>
+This project demonstrates a complete installation of osTicket (open-source helpdesk/ticketing system) on Windows Server 2025 using IIS, PHP, and MariaDB/MySQL. Includes VM setup, prerequisites, configuration, and verification..<br />
 
 <h2>Environments and Technologies Used</h2>
 
+- Windows Server 2025
 - Internet Information Services (IIS)
-- PHP 8+
-- MariaDB/MySQL Database
-- osTicket
+- PHP 8.2+ (NTS recommended for IIS)
+- MariaDB or MySQL 8.0+
+- PHP Manager for IIS
+- osTicket v1.18.x
 
-<h2>Operating Systems Used </h2>
-
-- Windows Server 2025</b> (21H2)
-
-<h2>System Requirements</h2>
-
-<img width="865" height="512" alt="image" src="https://github.com/user-attachments/assets/eb195dad-e28d-448f-83fc-dcfbfe2e5a07" />
-
-<h2>Downloads</h2>
-
-PHP 8.2 
-
-<img width="382" height="156" alt="image" src="https://github.com/user-attachments/assets/37b7e5bc-af2d-469e-b654-c6f01375f86a" />
-
-MariaDB Server
-
-<img width="487" height="355" alt="image" src="https://github.com/user-attachments/assets/67d2e180-a9f7-4331-bb9e-31d3b040d770" />
-
-PHP Manager for IIS
-
-<img width="824" height="405" alt="image" src="https://github.com/user-attachments/assets/e1c8b78a-25d2-469a-811c-efbe690d4a1a" />
-
-osTicket Core, v1.18.2
-
-<img width="839" height="198" alt="image" src="https://github.com/user-attachments/assets/9ed76889-b94f-4b57-8610-b8723436f675" />
-
-osTicket Plugins
-
-<img width="699" height="311" alt="image" src="https://github.com/user-attachments/assets/b9446d91-21ef-413d-ad84-1661b0fab190" />
-
-<h2>Video Demonstration</h2>
-
-- ### [OS Ticketing tool on Windows Server 2025 | Step-by-Step Guide](https://www.youtube.com/watch?v=CRl6ZXkAynU) by ServerFix I Lab. This video helped me understand OsTicket outside of the CourseCareers teaching. Follow the instructions in the video and you will have osTicket working in no time!
