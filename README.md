@@ -51,29 +51,30 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
 
 ## Step 2: Connecting to the VM & Initial Setup
 
-After the VM was successfully deployed, I connected to it using Remote Desktop Protocol (RDP).
+After deployment, I connected to the Windows Server 2025 VM.
 
-### Actions Performed:
-1. Downloaded the RDP file from the Azure Portal.
-2. Connected to the VM using the administrator username and password set during creation.
-3. On first login:
-   - Changed the administrator password.
-   - Ran Windows Update and installed all available updates.
-   - Renamed the computer to `OSTICKET-SRV` for easier identification.
-   - Installed Google Chrome for better browsing experience.
+### Connection Process:
+1. In Azure Portal → VM Overview → Clicked **Connect** → **RDP** → Downloaded the RDP file.
+2. Opened the `.rdp` file and logged in with the admin credentials.
+
+### Initial Configuration in Server Manager:
+- Opened **Server Manager** (it launches automatically on login).
+- Installed latest **Windows Updates**.
+- Renamed the computer from the default to `OSTICKET-SRV`.
+- Checked the dashboard for any warnings or configuration tasks.
 
 **Screenshots**:
 
-**1. Connecting via RDP**  
-![RDP Connection](screenshots/rdp-connection.png)
+**1. Downloading RDP File**  
+![Download RDP](screenshots/download-rdp.png)
 
-**2. Windows Server Desktop after Login**  
-![Server Desktop](screenshots/server-desktop.png)
+**2. Server Manager Dashboard**  
+![Server Manager](screenshots/server-manager-dashboard.png)
 
 **3. Running Windows Update**  
 ![Windows Update](screenshots/windows-update.png)
 
-**4. Computer Name Change**  
+**4. Renaming the Computer**  
 ![Rename Computer](screenshots/rename-computer.png)
 
 ## Step 3: Installing IIS
