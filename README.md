@@ -30,7 +30,7 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
 3. Created a Windows Server 2025 VM with the following settings:
    - Name: `osticket-win2025`
    - Region: [Your Region, e.g. East US]
-   - Image: Windows Server 2025 Datacenter (Desktop Experience)
+   - Image: Datacenter for Windows Server 2025 - x64 Gen2
    - Size: Standard D2s_v5 (2 vCPU, 8 GiB RAM)
    - Authentication: Password
    - Inbound Ports: RDP (3389)
