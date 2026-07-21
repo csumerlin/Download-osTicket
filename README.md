@@ -31,7 +31,7 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
    - Name: `osticket-win2025`
    - Region: [Your Region, e.g. East US]
    - Image: Datacenter for Windows Server 2025 - x64 Gen2
-   - Size: Standard D2s_v5 (2 vCPU, 8 GiB RAM)
+   - Size: Standard D2s_v3 (2 vCPU, 8 GiB RAM)
    - Authentication: Password
    - Inbound Ports: RDP (3389)
    - OS Disk: 128 GB Premium SSD
