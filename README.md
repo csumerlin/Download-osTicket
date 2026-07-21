@@ -49,20 +49,32 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
 **4. Deployment Complete**  
 ![Deployment Complete](screenshots/Deployment%20complete%20screen.png)
 
-### Connecting to the VM
-- Connected via Remote Desktop using the public IP address.
-- Changed administrator password and performed initial Windows Update.
+## Step 2: Connecting to the VM & Initial Setup
+
+After the VM was successfully deployed, I connected to it using Remote Desktop Protocol (RDP).
+
+### Actions Performed:
+1. Downloaded the RDP file from the Azure Portal.
+2. Connected to the VM using the administrator username and password set during creation.
+3. On first login:
+   - Changed the administrator password.
+   - Ran Windows Update and installed all available updates.
+   - Renamed the computer to `OSTICKET-SRV` for easier identification.
+   - Installed Google Chrome for better browsing experience.
 
 **Screenshots**:
-- RDP login screen
-- Server Manager after first login
-- Windows Update history
 
-## Step 2: Initial Server Configuration
-- Renamed computer to `OSTICKET-SRV`
-- Installed latest Windows updates
-- Installed Visual C++ Redistributable 2015-2022 (x64) — required for PHP
-- Enabled Remote Desktop (already configured in Azure)
+**1. Connecting via RDP**  
+![RDP Connection](screenshots/rdp-connection.png)
+
+**2. Windows Server Desktop after Login**  
+![Server Desktop](screenshots/server-desktop.png)
+
+**3. Running Windows Update**  
+![Windows Update](screenshots/windows-update.png)
+
+**4. Computer Name Change**  
+![Rename Computer](screenshots/rename-computer.png)
 
 ## Step 3: Installing IIS
 - Used Server Manager → Add Roles and Features
