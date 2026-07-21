@@ -36,8 +36,8 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
    - Inbound Ports: RDP (3389)
 
 **Screenshots**:
+- ![Create Reso Group](screenshots/Create%20urceRG.png)
 - ![Create VM Basics](screenshots/Azure%20Portal%20-%20Create%20VM%20Basics%20tab.png)
-- ![Create Resource Group](screenshots/Create%20RG.png)
 - ![Review + Create](screenshots/Review%20+%20Create%20summary.png)
 - ![Deployment Complete](screenshots/Deployment%20complete%20screen.png)
 
