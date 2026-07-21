@@ -1,77 +1,130 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# Deploying osTicket on Microsoft Azure (Windows Server 2025)
 
-<h1>osTicket Installation and Configuration on Windows Server 2025 (IIS)</h1>
-This project demonstrates a complete installation of osTicket (open-source helpdesk/ticketing system) on Windows Server 2025 using IIS, PHP, and MariaDB/MySQL. Includes VM setup, prerequisites, configuration, and verification..<br />
+This project demonstrates a **complete end-to-end deployment** of osTicket (open-source helpdesk/ticketing system) on Microsoft Azure using Windows Server 2025, IIS, PHP, and MariaDB.
 
-<h2>Environments and Technologies Used</h2>
+## Project Overview
+- **Platform**: Microsoft Azure
+- **Operating System**: Windows Server 2025 Datacenter (Desktop Experience)
+- **Web Server**: Internet Information Services (IIS)
+- **Purpose**: To showcase cloud deployment skills, proper server configuration, and a fully functional helpdesk system.
 
-- Windows Server 2025
-- Internet Information Services (IIS)
-- PHP 8.2+ (NTS recommended for IIS)
-- MariaDB or MySQL 8.0+
-- PHP Manager for IIS
-- osTicket v1.18.x
+## Environments and Technologies Used
+- **Cloud Platform**: Microsoft Azure (Free Trial)
+- **Virtual Machine**: Windows Server 2025 Datacenter
+- **Web Server**: IIS 10
+- **Runtime**: PHP 8.2+ (Non-Thread Safe)
+- **Database**: MariaDB 10.11 or MySQL 8.0+
+- **Management Tool**: PHP Manager for IIS
+- **osTicket Version**: v1.18.x (latest)
 
-## Prerequisites & VM Setup
+## Architecture
+- Azure VM with public IP (RDP access)
+- IIS hosting osTicket web application
+- MariaDB running on the same VM
+- All components installed and configured manually for learning purposes
 
-This project demonstrates a complete osTicket deployment in a realistic cloud environment using **Microsoft Azure**.
+## Step 1: Creating the Azure Virtual Machine
 
-### 1. Azure Virtual Machine Creation
-I created a new Windows Server 2025 VM in Microsoft Azure for this demonstration.
-
-**VM Configuration**:
-- **Subscription**: [Your Subscription Name]
-- **Resource Group**: `osTicket-Project-RG` (new)
-- **Virtual Machine Name**: `osticket-win2025`
-- **Region**: [e.g., East US or closest to you]
-- **Image**: Windows Server 2025 Datacenter (Desktop Experience)
-- **Size**: Standard D2s_v5 (2 vCPU, 8 GiB memory) or larger
-- **Authentication**: Password (admin username + strong password)
-- **Inbound Ports**: RDP (3389) enabled for management
-- **Disk**: 128 GB Premium SSD (OS disk)
-- **Networking**: New virtual network with public IP
-
-**Step-by-Step Process**:
-1. Log into the [Azure Portal](https://portal.azure.com).
-2. Search for **Virtual Machines** → Click **Create** → **Azure Virtual Machine**.
-3. Fill in the **Basics** tab with the settings above.
-4. In the **Networking** tab, allow RDP inbound.
-5. Review + Create → Deploy.
-
-**Screenshots to include**:
-- Azure Portal "Create a virtual machine" Basics tab
-- Review + Create summary page
-- Deployment progress / "Go to resource" after deployment
-
-### 2. Connecting to the VM & Initial Setup
-1. Once deployed, connect via **RDP** using the public IP and admin credentials.
-2. On first login:
-   - Run **Windows Update** and install all available updates.
-   - Rename the computer (e.g., `OSTICKET-SRV`).
-   - Configure a static private IP (optional but recommended).
-   - Install **Google Chrome** or Edge extensions for better productivity.
-
-**Screenshots to include**:
-- RDP connection screen / successful desktop login
-- Server Manager opening on first boot
-- Windows Update running
-- System Properties showing computer name and Windows version (`winver`)
-
-### 3. Key Prerequisites Installed
-Before installing IIS/PHP/osTicket:
-- **Microsoft Visual C++ Redistributable 2015-2022 (x64)**
-- Latest Windows updates applied
-- Remote Desktop enabled (already configured in Azure)
+1. Logged into the [Azure Portal](https://portal.azure.com) using a Free Trial account.
+2. Created a new Resource Group: `osTicket-Project-RG`
+3. Created a Windows Server 2025 VM with the following settings:
+   - Name: `osticket-win2025`
+   - Region: [Your Region, e.g. East US]
+   - Image: Windows Server 2025 Datacenter (Desktop Experience)
+   - Size: Standard D2s_v5 (2 vCPU, 8 GiB RAM)
+   - Authentication: Password
+   - Inbound Ports: RDP (3389)
+   - OS Disk: 128 GB Premium SSD
 
 **Screenshots**:
-- "Apps & features" list showing Visual C++ Redistributable
-- `winver` showing Windows Server 2025
+- Azure Portal - Create VM Basics tab
+- Review + Create summary
+- Deployment complete screen
+
+### Connecting to the VM
+- Connected via Remote Desktop using the public IP address.
+- Changed administrator password and performed initial Windows Update.
+
+**Screenshots**:
+- RDP login screen
+- Server Manager after first login
+- Windows Update history
+
+## Step 2: Initial Server Configuration
+- Renamed computer to `OSTICKET-SRV`
+- Installed latest Windows updates
+- Installed Visual C++ Redistributable 2015-2022 (x64) — required for PHP
+- Enabled Remote Desktop (already configured in Azure)
+
+## Step 3: Installing IIS
+- Used Server Manager → Add Roles and Features
+- Installed **Web Server (IIS)** with **CGI** role service (required for PHP)
+- Installed **URL Rewrite** module
+
+**Screenshots**:
+- Add Roles and Features wizard
+- IIS Manager open
+
+## Step 4: Installing PHP
+- Downloaded PHP 8.2+ Non-Thread Safe (NTS) x64 from windows.php.net
+- Extracted to `C:\PHP`
+- Installed PHP Manager for IIS
+- Registered PHP with IIS and enabled required extensions (`gd`, `imap`, `intl`, `mbstring`, `mysqli`, `opcache`, etc.)
+
+**Screenshots**:
+- PHP Manager interface
+- `phpinfo()` test page
+
+## Step 5: Installing MariaDB / MySQL
+- Installed MariaDB 10.11
+- Created root password
+- Created database `osticket` and dedicated user
+
+**Screenshots**:
+- MariaDB installation
+- Database creation (via HeidiSQL or command line)
+
+## Step 6: Deploying osTicket
+- Downloaded latest osTicket release from GitHub
+- Extracted `upload` folder contents to `C:\inetpub\wwwroot\osticket`
+- Renamed `ost-sampleconfig.php` → `ost-config.php`
+- Set proper permissions on the config file
+
+## Step 7: Running the osTicket Web Installer
+- Browsed to `http://localhost/osticket` (or public IP)
+- Completed the web-based installer:
+  - Database configuration
+  - Admin user creation
+  - System settings
+- Removed the `/setup/` folder for security
+
+**Screenshots**:
+- osTicket installer welcome screen
+- Database settings page
+- Successful installation confirmation
+- osTicket Admin Dashboard
+
+## Step 8: Testing & Verification
+- Created test tickets as a user and agent
+- Verified email piping potential and basic functionality
+- Confirmed the system is accessible via public IP
+
+**Screenshots**:
+- Agent dashboard
+- Sample ticket creation
+
+## Cost Summary (Free Trial)
+- VM runtime cost was minimal and covered under Azure Free Trial credits.
+- After completion, the VM was **deallocated** to avoid charges.
+
+## Conclusion & Lessons Learned
+- Successfully deployed a production-ready helpdesk system in the cloud.
+- Gained hands-on experience with Azure VM provisioning, Windows Server administration, IIS + PHP configuration, and osTicket setup.
+- Key takeaway: Proper planning of VM sizing, security groups, and post-deployment configuration is critical.
 
 ---
 
-**Notes**:
-- Total cost for this demo VM (a few hours): Very low (< $1).
-- The VM was created fresh specifically for this project to match real-world cloud deployment scenarios.
-- Azure provides easy scalability, automatic patching options, and built-in security features (NSGs, etc.).
+**Repository Contents**
+- This README with full documentation
+- Screenshots folder (all steps documented)
+- Any configuration files (optional)
