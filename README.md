@@ -16,60 +16,62 @@ This project demonstrates a complete installation of osTicket (open-source helpd
 
 ## Prerequisites & VM Setup
 
-This project was built in a **virtualized environment** to simulate a production Windows Server deployment.
+This project demonstrates a complete osTicket deployment in a realistic cloud environment using **Microsoft Azure**.
 
-### 1. Virtual Machine Creation
-- **Hypervisor Used**: [Hyper-V / VirtualBox / VMware Workstation / Azure — choose one]
-- **VM Specifications**:
-  - Name: `osTicket-WinServer2025`
-  - Generation: 2 (recommended for Windows Server 2025)
-  - vCPU: 2–4 cores
-  - RAM: 4–8 GB (Dynamic Memory enabled)
-  - Hard Disk: 60–100 GB VHDX (dynamically expanding)
-  - Network: External / Default Switch (for internet access during setup)
+### 1. Azure Virtual Machine Creation
+I created a new Windows Server 2025 VM in Microsoft Azure for this demonstration.
+
+**VM Configuration**:
+- **Subscription**: [Your Subscription Name]
+- **Resource Group**: `osTicket-Project-RG` (new)
+- **Virtual Machine Name**: `osticket-win2025`
+- **Region**: [e.g., East US or closest to you]
+- **Image**: Windows Server 2025 Datacenter (Desktop Experience)
+- **Size**: Standard D2s_v5 (2 vCPU, 8 GiB memory) or larger
+- **Authentication**: Password (admin username + strong password)
+- **Inbound Ports**: RDP (3389) enabled for management
+- **Disk**: 128 GB Premium SSD (OS disk)
+- **Networking**: New virtual network with public IP
+
+**Step-by-Step Process**:
+1. Log into the [Azure Portal](https://portal.azure.com).
+2. Search for **Virtual Machines** → Click **Create** → **Azure Virtual Machine**.
+3. Fill in the **Basics** tab with the settings above.
+4. In the **Networking** tab, allow RDP inbound.
+5. Review + Create → Deploy.
 
 **Screenshots to include**:
-- Hyper-V Manager → New Virtual Machine Wizard (name, memory, networking, disk, ISO selection)
-- VM Settings summary
+- Azure Portal "Create a virtual machine" Basics tab
+- Review + Create summary page
+- Deployment progress / "Go to resource" after deployment
 
-### 2. Installing Windows Server 2025
-1. Download the official Windows Server 2025 ISO from the Microsoft Evaluation Center.
-2. Boot the VM from the ISO.
-3. Choose **Windows Server 2025 Datacenter (Desktop Experience)** during installation.
-4. Complete initial setup:
-   - Set administrator password.
-   - Run Windows Update immediately after first login.
-   - Configure static IP address (optional but recommended for consistency).
+### 2. Connecting to the VM & Initial Setup
+1. Once deployed, connect via **RDP** using the public IP and admin credentials.
+2. On first login:
+   - Run **Windows Update** and install all available updates.
+   - Rename the computer (e.g., `OSTICKET-SRV`).
+   - Configure a static private IP (optional but recommended).
+   - Install **Google Chrome** or Edge extensions for better productivity.
 
 **Screenshots to include**:
-- Installation media selection / boot screen
-- OS selection (Desktop Experience)
-- Post-install desktop with Server Manager open
-- Windows Update status
-- Network/IP configuration (`ipconfig` output)
+- RDP connection screen / successful desktop login
+- Server Manager opening on first boot
+- Windows Update running
+- System Properties showing computer name and Windows version (`winver`)
 
-### 3. Initial Server Configuration (Prerequisites)
-Before installing IIS, PHP, or osTicket:
-- Rename the server (e.g., `OSTICKET-SRV`).
-- Join to a domain (optional — for this demo, it was left in Workgroup).
-- Install latest Windows updates.
-- Enable Remote Desktop (for easier management).
+### 3. Key Prerequisites Installed
+Before installing IIS/PHP/osTicket:
+- **Microsoft Visual C++ Redistributable 2015-2022 (x64)**
+- Latest Windows updates applied
+- Remote Desktop enabled (already configured in Azure)
 
 **Screenshots**:
-- System Properties (computer name)
-- Windows Update history
-- `winver` command output
-
-### 4. Key Software Prerequisites Installed
-- **Visual C++ Redistributable** (2015–2022 x64) — required for PHP.
-- **URL Rewrite Module** for IIS.
-- **PHP Manager for IIS** (for easy PHP configuration).
-
-**Screenshots**:
-- Programs and Features list showing installed prerequisites.
+- "Apps & features" list showing Visual C++ Redistributable
+- `winver` showing Windows Server 2025
 
 ---
 
-**Notes**: 
-- Total setup time for VM + base OS: ~45–60 minutes.
-- All steps were performed on a fresh installation to ensure reproducibility.
+**Notes**:
+- Total cost for this demo VM (a few hours): Very low (< $1).
+- The VM was created fresh specifically for this project to match real-world cloud deployment scenarios.
+- Azure provides easy scalability, automatic patching options, and built-in security features (NSGs, etc.).
