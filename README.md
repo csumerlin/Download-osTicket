@@ -65,20 +65,22 @@ After deployment, I connected to the Windows Server 2025 VM.
 
 **Screenshots**:
 
+**Screenshots**:
+
 **1. Downloading RDP File**  
-![Download RDP](screenshots/download-rdp.png)
+![Downloading RDP File](screenshots/download-rdp.png)
 
 **2. RDP Connection Screen**  
-![RDP Connection](screenshots/rdp-connection-screen.png)
+![RDP Connection Screen](screenshots/rdp-connection-screen.png)
 
 **3. Server Manager Dashboard**  
 ![Server Manager Dashboard](screenshots/server-manager-dashboard.png)
 
 **4. Running Windows Update**  
-![Windows Update](screenshots/windows-update.png)
+![Running Windows Update](screenshots/windows-update.png)
 
 **5. Renaming the Computer**  
-![Rename Computer](screenshots/rename-computer.png)
+![Renaming the Computer](screenshots/rename-computer.png)
 
 ## Step 3: Installing IIS
 - Used Server Manager → Add Roles and Features
