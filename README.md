@@ -82,29 +82,31 @@ After deployment, I connected to the Windows Server 2025 VM.
 
 ## Step 3: Installing IIS
 
-With the server updated and configured, I installed Internet Information Services (IIS), the web server required to host osTicket.
+With the base server ready, I installed Internet Information Services (IIS) — the web server needed to run osTicket.
 
 ### Installation Steps:
-1. Opened **Server Manager**.
-2. Clicked **Add Roles and Features**.
-3. Selected **Web Server (IIS)** role.
-4. Included the **CGI** role service (required for PHP).
-5. Installed **URL Rewrite** module (for clean URLs).
-6. Verified IIS was running by browsing to `http://localhost`.
+1. In Server Manager, went to **Add Roles and Features**.
+2. Selected **Web Server (IIS)** role.
+3. Ensured **CGI** was checked under Application Development (required for PHP).
+4. Installed the role and **URL Rewrite** module.
+5. Verified IIS by browsing to `http://localhost`.
 
 **Screenshots**:
 
 **Add Roles and Features Wizard**  
-![Add Roles and Features](screenshots/add-roles-iis.png)
+![Add Roles and Features Wizard](screenshots/Add%20Roles%20and%20Features%20wizard.png)
 
-**Selecting Web Server (IIS)**  
-![Web Server IIS](screenshots/web-server-iis.png)
+**Web Server (IIS) Selected**  
+![Web Server IIS Selected](screenshots/Web%20Server%20(IIS)%20selected.png)
 
-**IIS Manager After Installation**  
-![IIS Manager](screenshots/iis-manager.png)
+**CGI Checked**  
+![CGI Checked](screenshots/CGI%20checked.png)
 
-**Default IIS Welcome Page**  
-![IIS Welcome](screenshots/iis-welcome-page.png)
+**Installation Progress**  
+![Installation Progress](screenshots/Installation%20progress.png)
+
+**IIS Welcome Page at localhost**  
+![IIS Welcome Page](screenshots/IIS%20welcome%20page%20at%20localhost.png)
 
 ## Step 4: Installing PHP
 - Downloaded PHP 8.2+ Non-Thread Safe (NTS) x64 from windows.php.net
