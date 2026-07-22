@@ -68,11 +68,11 @@ After deployment, I connected to the Windows Server 2025 VM.
 **1. Downloading RDP File**  
 ![Downloading RDP File](screenshots/download-rdp.png)
 
-**2. RDP Connection Screen**  
-![RDP Connection Screen](screenshots/rdp-connection-screen.png)
+**RDP Connection Screen**  
+![RDP Connection Screen](screenshots/RDP%20Connection%20Screen.png)
 
-**3. Server Manager Dashboard**  
-![Server Manager Dashboard](screenshots/server-manager-dashboard.png)
+**Server Manager Dashboard**  
+![Server Manager Dashboard](screenshots/Server%20Manager%20Dashboard.PNG)
 
 **4. Running Windows Update**  
 ![Running Windows Update](screenshots/windows-update.png)
