@@ -94,19 +94,19 @@ With the base server ready, I installed Internet Information Services (IIS) — 
 **Screenshots**:
 
 **Add Roles and Features Wizard**  
-![Add Roles and Features Wizard](screenshots/Add%20Roles%20and%20Features%20wizard.png)
+![Add Roles and Features Wizard](screenshots/Add%20Roles%20and%20Features%20wizard.PNG)
 
 **Web Server (IIS) Selected**  
-![Web Server IIS Selected](screenshots/Web%20Server%20(IIS)%20selected.png)
+![Web Server IIS Selected](screenshots/Web%20Server%20(IIS)%20selected.PNG)
 
 **CGI Checked**  
 ![CGI Checked](screenshots/CGI%20checked.PNG)
 
 **Installation Progress**  
-![Installation Progress](screenshots/Installation%20progress.png)
+![Installation Progress](screenshots/Installation%20progress.PNG)
 
 **IIS Welcome Page at localhost**  
-![IIS Welcome Page](screenshots/IIS%20welcome%20page%20at%20localhost.png)
+![IIS Welcome Page](screenshots/IIS%20welcome%20page%20at%20localhost.PNG)
 
 
 ## Step 4: Installing PHP
