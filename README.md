@@ -100,13 +100,14 @@ With the base server ready, I installed Internet Information Services (IIS) — 
 ![Web Server IIS Selected](screenshots/Web%20Server%20(IIS)%20selected.png)
 
 **CGI Checked**  
-![CGI Checked](screenshots/CGI%20checked.png)
+![CGI Checked](screenshots/CGI%20checked.PNG)
 
 **Installation Progress**  
 ![Installation Progress](screenshots/Installation%20progress.png)
 
 **IIS Welcome Page at localhost**  
 ![IIS Welcome Page](screenshots/IIS%20welcome%20page%20at%20localhost.png)
+
 
 ## Step 4: Installing PHP
 - Downloaded PHP 8.2+ Non-Thread Safe (NTS) x64 from windows.php.net
