@@ -49,6 +49,7 @@ This project demonstrates a **complete end-to-end deployment** of osTicket (open
 **4. Deployment Complete**  
 ![Deployment Complete](screenshots/Deployment%20complete%20screen.png)
 
+
 ## Step 2: Connecting to the VM & Initial Setup
 
 After deployment, I connected to the Windows Server 2025 VM.
@@ -80,6 +81,7 @@ After deployment, I connected to the Windows Server 2025 VM.
 **5. Renaming the Computer**  
 ![Rename Computer](screenshots/Rename%20Computer.PNG)
 
+
 ## Step 3: Installing IIS
 
 With the base server ready, I installed Internet Information Services (IIS) — the web server needed to run osTicket.
@@ -110,14 +112,30 @@ With the base server ready, I installed Internet Information Services (IIS) — 
 
 
 ## Step 4: Installing PHP
-- Downloaded PHP 8.2+ Non-Thread Safe (NTS) x64 from windows.php.net
-- Extracted to `C:\PHP`
-- Installed PHP Manager for IIS
-- Registered PHP with IIS and enabled required extensions (`gd`, `imap`, `intl`, `mbstring`, `mysqli`, `opcache`, etc.)
+
+PHP is required to run osTicket. I installed PHP 8.2+ (Non-Thread Safe version for IIS).
+
+### Installation Steps:
+1. Downloaded PHP 8.x NTS x64 from windows.php.net and extracted to `C:\PHP`.
+2. Installed PHP Manager for IIS.
+3. Registered PHP and enabled required extensions.
+4. Installed **Visual C++ Redistributable 2015-2022 (x64)** to resolve FastCGI errors.
+5. Created and tested `phpinfo.php` at `http://localhost/phpinfo.php`.
 
 **Screenshots**:
-- PHP Manager interface
-- `phpinfo()` test page
+
+**PHP Extracted to C:\PHP**  
+![PHP Folder](screenshots/php-folder.png)
+
+**PHP Manager**  
+![PHP Manager](screenshots/php-manager.png)
+
+**Visual C++ Redistributable Installation**  
+![Visual C++ Redistributable](screenshots/visual-cpp-redistributable.png)
+
+**Successful phpinfo Page**  
+![phpinfo Success](screenshots/phpinfo-success.png)
+
 
 ## Step 5: Installing MariaDB / MySQL
 - Installed MariaDB 10.11
