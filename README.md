@@ -168,10 +168,32 @@ MariaDB serves as the database for osTicket.
 
 
 ## Step 6: Deploying osTicket
-- Downloaded latest osTicket release from GitHub
-- Extracted `upload` folder contents to `C:\inetpub\wwwroot\osticket`
-- Renamed `ost-sampleconfig.php` → `ost-config.php`
-- Set proper permissions on the config file
+
+With prerequisites complete, I deployed the osTicket application.
+
+### Steps:
+1. Downloaded the latest osTicket from GitHub.
+2. Extracted and placed the files in the web root.
+3. Renamed the sample config file.
+4. Ran the web-based installer.
+
+**Screenshots**:
+
+**osTicket GitHub Download**  
+![osTicket Download](screenshots/osticket%20in%20github.PNG)
+
+**osTicket Files in wwwroot**  
+![osTicket Files](screenshots/Windows%20Explorer%20osticket%20files.PNG)
+
+**Config File Renamed**  
+![Config Renamed](screenshots/Config%20renamed.PNG)
+
+**osTicket Welcome Screen**  
+![osTicket Welcome](screenshots/osticket%20welcome%20screen.PNG)
+
+**osTicket Installation Complete**  
+![Installation Complete](screenshots/osticket%20install%20complete.PNG)
+
 
 ## Step 7: Running the osTicket Web Installer
 - Browsed to `http://localhost/osticket` (or public IP)
