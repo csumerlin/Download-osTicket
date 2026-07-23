@@ -113,28 +113,34 @@ With the base server ready, I installed Internet Information Services (IIS) — 
 
 ## Step 4: Installing PHP
 
-PHP is required to run osTicket. I installed PHP 8.2+ (Non-Thread Safe version for IIS).
+PHP is required to run osTicket. I installed a recent version of PHP 8.x (Non-Thread Safe for IIS).
 
 ### Installation Steps:
-1. Downloaded PHP 8.x NTS x64 from windows.php.net and extracted to `C:\PHP`.
+1. Downloaded PHP from windows.php.net and extracted it.
 2. Installed PHP Manager for IIS.
 3. Registered PHP and enabled required extensions.
-4. Installed **Visual C++ Redistributable 2015-2022 (x64)** to resolve FastCGI errors.
-5. Created and tested `phpinfo.php` at `http://localhost/phpinfo.php`.
+4. Installed Visual C++ Redistributable to fix FastCGI errors.
+5. Verified with a phpinfo test page.
 
 **Screenshots**:
 
-**PHP Extracted to C:\PHP**  
-![PHP Folder](screenshots/php-folder.png)
+**PHP Download**  
+![PHP Download](screenshots/php%20download.PNG)
+
+**PHP Folder**  
+![PHP Folder](screenshots/Windows%20Explorer%20php%20folder.PNG)
 
 **PHP Manager**  
-![PHP Manager](screenshots/php-manager.png)
+![PHP Manager](screenshots/PHP%20manager.PNG)
 
-**Visual C++ Redistributable Installation**  
-![Visual C++ Redistributable](screenshots/visual-cpp-redistributable.png)
+**PHP Successfully Registered**  
+![PHP Registered](screenshots/PHP%20manager%20successfully%20registered.PNG)
+
+**PHP Extensions Enabled**  
+![PHP Extensions](screenshots/PHP%20extensions.PNG)
 
 **Successful phpinfo Page**  
-![phpinfo Success](screenshots/phpinfo-success.png)
+![phpinfo Success](screenshots/Successful%20phpinfo%20page.PNG)
 
 
 ## Step 5: Installing MariaDB / MySQL
