@@ -195,41 +195,42 @@ With prerequisites complete, I deployed the osTicket application.
 ![Installation Complete](screenshots/osticket%20install%20complete.PNG)
 
 
-## Step 7: Running the osTicket Web Installer
-- Browsed to `http://localhost/osticket` (or public IP)
-- Completed the web-based installer:
-  - Database configuration
-  - Admin user creation
-  - System settings
-- Removed the `/setup/` folder for security
+## Step 7: Final Testing & Verification
+
+After successful installation, I verified that osTicket was fully functional.
+
+### Tests Performed:
+- Logged in as admin.
+- Created a test ticket as a user.
+- Responded to the ticket as an agent.
+- Confirmed the system is accessible via the local web server.
 
 **Screenshots**:
-- osTicket installer welcome screen
-- Database settings page
-- Successful installation confirmation
-- osTicket Admin Dashboard
 
-## Step 8: Testing & Verification
-- Created test tickets as a user and agent
-- Verified email piping potential and basic functionality
-- Confirmed the system is accessible via public IP
+**Admin Login Dashboard**  
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
-**Screenshots**:
-- Agent dashboard
-- Sample ticket creation
+**New Ticket Creation**  
+![New Ticket](screenshots/new-ticket.png)
 
-## Cost Summary (Free Trial)
-- VM runtime cost was minimal and covered under Azure Free Trial credits.
-- After completion, the VM was **deallocated** to avoid charges.
+**Agent Ticket View**  
+![Agent Response](screenshots/agent-response.png)
+
+**System Working**  
+![Final Verification](screenshots/system-working.png)
+
 
 ## Conclusion & Lessons Learned
-- Successfully deployed a production-ready helpdesk system in the cloud.
-- Gained hands-on experience with Azure VM provisioning, Windows Server administration, IIS + PHP configuration, and osTicket setup.
-- Key takeaway: Proper planning of VM sizing, security groups, and post-deployment configuration is critical.
 
----
+This project successfully demonstrated a full deployment of osTicket on Windows Server 2025 in Microsoft Azure.
 
-**Repository Contents**
-- This README with full documentation
-- Screenshots folder (all steps documented)
-- Any configuration files (optional)
+### Key Skills Demonstrated:
+- Azure VM provisioning and configuration
+- IIS web server setup with PHP
+- Database configuration with MariaDB
+- Application deployment and troubleshooting
+
+The environment is now ready for production-like ticketing operations.
+
+**Total Setup Time**: Approximately 8 hours.
+**Challenges Overcome**: PHP FastCGI errors, permission issues, and deprecation warnings.
