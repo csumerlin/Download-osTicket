@@ -197,40 +197,30 @@ With prerequisites complete, I deployed the osTicket application.
 
 ## Step 7: Final Testing & Verification
 
-After successful installation, I verified that osTicket was fully functional.
+After installation, I verified that osTicket was fully operational.
 
 ### Tests Performed:
-- Logged in as admin.
+- Logged into the admin dashboard.
 - Created a test ticket as a user.
 - Responded to the ticket as an agent.
-- Confirmed the system is accessible via the local web server.
+- Confirmed the full system is working.
 
 **Screenshots**:
 
-**Admin Login Dashboard**  
-![Admin Dashboard](screenshots/admin-dashboard.png)
+**Admin Dashboard**  
+![Admin Dashboard](screenshots/admin%20dashboard.PNG)
 
-**New Ticket Creation**  
-![New Ticket](screenshots/new-ticket.png)
+**New Ticket**  
+![New Ticket](screenshots/new%20ticket.PNG)
 
-**Agent Ticket View**  
-![Agent Response](screenshots/agent-response.png)
+**Admin Response**  
+![Admin Response](screenshots/admin%20response.PNG)
 
-**System Working**  
-![Final Verification](screenshots/system-working.png)
+**osTicket Working**  
+![osTicket Working](screenshots/osticket%20works.PNG)
 
+## Conclusion
 
-## Conclusion & Lessons Learned
+This project successfully demonstrated a complete deployment of osTicket on Windows Server 2025 in Microsoft Azure, including VM setup, IIS, PHP, MariaDB, and application configuration.
 
-This project successfully demonstrated a full deployment of osTicket on Windows Server 2025 in Microsoft Azure.
-
-### Key Skills Demonstrated:
-- Azure VM provisioning and configuration
-- IIS web server setup with PHP
-- Database configuration with MariaDB
-- Application deployment and troubleshooting
-
-The environment is now ready for production-like ticketing operations.
-
-**Total Setup Time**: Approximately 8 hours.
-**Challenges Overcome**: PHP FastCGI errors, permission issues, and deprecation warnings.
+All major components are functional, and the system is ready for use.
