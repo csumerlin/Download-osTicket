@@ -143,14 +143,29 @@ PHP is required to run osTicket. I installed a recent version of PHP 8.x (Non-Th
 ![phpinfo Success](screenshots/Successful%20phpinfo%20page.PNG)
 
 
-## Step 5: Installing MariaDB / MySQL
-- Installed MariaDB 10.11
-- Created root password
-- Created database `osticket` and dedicated user
+## Step 5: Installing MariaDB
+
+MariaDB serves as the database for osTicket.
+
+### Installation Steps:
+1. Downloaded and installed MariaDB 12.3.2.
+2. Set a strong root password during setup.
+3. Used HeidiSQL to connect and create the `osticket` database.
 
 **Screenshots**:
-- MariaDB installation
-- Database creation (via HeidiSQL or command line)
+
+**MariaDB Download**  
+![MariaDB Download](screenshots/MariaDB%20download.PNG)
+
+**Installer Option Screen**  
+![Installer Options](screenshots/Installer%20option%20screen.PNG)
+
+**MariaDB Password Setup**  
+![Root Password](screenshots/MariaDB%20password.PNG)
+
+**HeidiSQL Connected**  
+![HeidiSQL](screenshots/Heidisql.PNG)
+
 
 ## Step 6: Deploying osTicket
 - Downloaded latest osTicket release from GitHub
